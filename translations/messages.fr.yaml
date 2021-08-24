@@ -1,0 +1,51 @@
+please login: bien vouloir se connecter
+account_created: Votre compte a été créé, un lien d'activation vous a été envoyé par mail
+profile_update: Profile mis à jour
+required_field: champ requis
+user not found: compte non existant
+user_not_found: compte non existant
+account not activated: compte non activé
+account locked: compte bloqué
+login or password incorrect: email / mot de passe incorrect
+Password does not match: email / mot de passe incorrect
+empty request: requête non valide
+phone already used: numéro de téléphone déjà utilisé
+name should not be empty: le champ nom est vide
+password should contains at least 6 characters: le mot de passe doit contenir au moins 6 charactères
+empty img: champ img non fourni
+please choose image profile again: une erreur est survenue
+nothing_to_update: Aucune modification effectuée
+not found: entité non trouvé(e) ->
+account created: compte créé
+email already used: email déjà utilisé
+user updated: utilisateur modifié
+action updated: action(s) modifiée(s)
+code generated: code généré
+already used: déjà utilisé
+empty field: champ vide
+phone length error: le téléphone doit contenir au moins 9 chiffres
+current_password_invalid: Mot de passe courant incorrect
+new_password_invalid: Le nouveau mot de passe devrait contenir au moins 6 charactères
+password_invalid: Le mot de passe doit contenir au moins 6 charactères
+operation denied: opération interdite
+sub domain name already used: sous domaine déjà utilisé
+entity name must content at least 2 characters: le nom l'entité doit contenir au moins 2 caractères
+entity description must content at least 100 characters: la description de l'entité doit contenir au moins 100 caractères
+entity subdomain name must content at least 3 characters: le nom du sous-domaine de l'entité doit contenir au moins 3 caractères
+account not found: compte non trouvé
+account already activated: compte déjà activé
+account activated: compte activé
+endate_startdate_error: la date de fin doit être supérieure à la date de début
+extend enddate: vous pouvez plutôt etendre la date de fin
+activate entity: vous devriez plutôt effectuer une activation
+old_startdate_error: la date de fin doit être supérieure à l'ancienne date de fin
+choose at list one category: choisissez au moins une catégorie
+customer name should not be empty: le  nom du client doit contenir au moins 3 charactères
+customer phone length error: le téléphone du client doit compter au moins 9 chiffres
+bad user type: Type de compte incorrect
+new password send: Un nouveau mot de passe a été envoyé à votre boîte mail
+no registered entity: Aucune entité enregistré
+you have not been added to any entity: vous n'avez été ajouté à aucune entité
+user already have an entity: l'utilisateur a déjà une entité
+no pay mode cash registered: aucun mode de paiement cash enregistré
+title should not be empty: title should not be empty

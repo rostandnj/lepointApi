@@ -1,0 +1,427 @@
+index:
+    path: /
+    controller: App\Controller\ApiController::hello
+api_login_check:
+  path: /api/login_check
+
+api_update_token:
+  path: /api/update/token
+  controller: App\Controller\ApiController::updateToken
+  methods: [POST,GET]
+
+web_own_login:
+  path: /api/login
+  controller: App\Controller\ApiController::login
+  methods: [POST]
+
+api_update_profile:
+  path: /api/update/profile/{type}
+  controller: App\Controller\ApiController::updateProfile
+  methods: [POST]
+
+api_reset_password:
+  path: /reset/password
+  controller: App\Controller\ApiController::resetPassword
+  methods: [POST]
+
+api_validation_account:
+  path: /validation/account/{token}
+  controller: App\Controller\ApiController::validateAccount
+  methods: [GET]
+
+api_register_entity:
+  path: /register/entity
+  controller: App\Controller\ApiController::registerEntity
+  methods: [POST]
+
+api_activate_entity:
+  path: /api/activate/entity
+  controller: App\Controller\ApiController::activateEntity
+  methods: [POST]
+
+api_extend_activate_entity:
+  path: /api/extend/activate/entity
+  controller: App\Controller\ApiController::extendActivationEntity
+  methods: [POST]
+
+api_edit_status_entity:
+  path: /api/edit/status/entity
+  controller: App\Controller\ApiController::changeEntityStatus
+  methods: [POST]
+
+api_get_active_entity:
+  path: /list/active/entity
+  controller: App\Controller\ApiController::getActiveEntity
+  methods: [POST]
+
+api_get_all_entity:
+  path: /api/list/all/entity
+  controller: App\Controller\ApiController::getAllEntity
+  methods: [POST]
+
+api_show_one_entity:
+  path: /show/one/entity
+  controller: App\Controller\ApiController::showOneEntity
+  methods: [POST]
+
+api_manage_menu_cateogires_entity:
+  path: /api/manage/menu/categories/entity
+  controller: App\Controller\ApiController::manageEntityBaseCategories
+  methods: [POST]
+
+api_add_menu_entity:
+  path: /api/add/menu/entity
+  controller: App\Controller\ApiController::addEntityMenu
+  methods: [POST]
+
+api_edit_menu_entity:
+  path: /api/edit/menu/entity
+  controller: App\Controller\ApiController::editEntityMenu
+  methods: [POST]
+
+api_delete_menu_entity:
+  path: /api/delete/menu/entity
+  controller: App\Controller\ApiController::deleteEntityMenu
+  methods: [POST]
+
+api_update_day_menu_entity:
+  path: /api/update/day/menu/entity
+  controller: App\Controller\ApiController::updateEntityDayMenu
+  methods: [POST]
+
+
+api_make_order:
+  path: /make/order
+  controller: App\Controller\ApiController::makeOrder
+  methods: [POST]
+
+api_make_order_connected:
+  path: /api/make/order
+  controller: App\Controller\ApiController::makeOrderConnected
+  methods: [POST]
+
+api_register_manager_entity:
+  path: /api/register/manager/entity
+  controller: App\Controller\ApiController::registerManager
+  methods: [POST]
+
+api_manage_user_account:
+  path: /api/manage/user/account
+  controller: App\Controller\ApiController::manageUserAccount
+  methods: [POST]
+
+api_running_order_entity:
+  path: /api/get/running/orders
+  controller: App\Controller\ApiController::getInRunningOrders
+  methods: [POST]
+
+api_paid_order_entity:
+  path: /api/get/paid/orders
+  controller: App\Controller\ApiController::getPaidAndDeliveredOrders
+  methods: [POST]
+
+api_running_order_admin:
+  path: /api/get/running/orders/admin
+  controller: App\Controller\ApiController::getInRunningOrdersAdmin
+  methods: [POST]
+
+api_paid_order_admin:
+  path: /api/get/paid/orders/admin
+  controller: App\Controller\ApiController::getPaidAndDeliveredOrdersAdmin
+  methods: [POST]
+
+
+api_update_order_stqtus:
+  path: /api/update/order/status
+  controller: App\Controller\ApiController::updateOrderStatus
+  methods: [POST]
+
+api_update_opening_days:
+  path: /api/update/opening/days
+  controller: App\Controller\ApiController::updateOpeningDay
+  methods: [POST]
+
+api_list_cities:
+  path: /list/cities
+  controller: App\Controller\ApiController::getAllCities
+  methods: [POST,GET]
+
+api_user_detail:
+  path: /api/user/detail
+  controller: App\Controller\ApiController::getUserDetail
+  methods: [POST]
+
+api_register_client:
+  path: /register/client
+  controller: App\Controller\ApiController::registerAccount
+  methods: [POST]
+
+api_user_entity:
+  path: /api/user/entity
+  controller: App\Controller\ApiController::getUserEntities
+  methods: [POST]
+
+api_user_orders:
+  path: /api/user/orders
+  controller: App\Controller\ApiController::getUserOrders
+  methods: [POST]
+
+api_register_only_entity:
+  path: /api/register/only/entity
+  controller: App\Controller\ApiController::registerOnlyEntity
+  methods: [POST]
+
+api_get_all_users:
+  path: /api/all/users
+  controller: App\Controller\ApiController::getAllUsers
+  methods: [POST]
+
+api_get_all_manager_entity:
+  path: /api/all/entity/manager
+  controller: App\Controller\ApiController::getManagerEntity
+  methods: [POST]
+
+api_get_entity_detail:
+  path: /entity/details
+  controller: App\Controller\ApiController::getOneEntityDetails
+  methods: [POST]
+
+api_upload_image:
+  path: /upload/image
+  controller: App\Controller\ApiController::uploadImage
+  methods: [POST]
+
+api_get_entity_categories_menu:
+  path: /entity/categories_menu
+  controller: App\Controller\ApiController::getEntityCategories
+  methods: [POST]
+
+api_get_all_base_categories:
+  path: /all/base_categories
+  controller: App\Controller\ApiController::getAllBaseCategories
+  methods: [POST,GET]
+
+api_get_all_base_categories_lunch:
+  path: /all/base_categories/lunch
+  controller: App\Controller\ApiController::getAllBaseCategoriesLunch
+  methods: [POST,GET]
+
+api_get_all_base_categories_drink:
+  path: /all/base_categories/drink
+  controller: App\Controller\ApiController::getAllBaseCategoriesDrink
+  methods: [POST,GET]
+
+api_get_all_base_categories_entity:
+  path: /all/entity/base_categories
+  controller: App\Controller\ApiController::getAllEntityBaseCategories
+  methods: [POST]
+
+api_get_update_entity:
+  path: /api/update/entity
+  controller: App\Controller\ApiController::updateEntity
+  methods: [POST]
+
+api_add_entity_manager:
+  path: /api/add/entity/manager
+  controller: App\Controller\ApiController::addManager
+  methods: [POST]
+
+api_remove_entity_manager:
+  path: /api/remove/entity/manager
+  controller: App\Controller\ApiController::removeManager
+  methods: [POST]
+
+api_orders_all:
+  path: /api/all/orders
+  controller: App\Controller\ApiController::getAllOrdersAdmin
+  methods: [POST]
+
+api_orders_all_entity:
+  path: /api/all/orders/entity
+  controller: App\Controller\ApiController::getAllOrders
+  methods: [POST]
+
+api_get_notifs:
+  path: /api/user/notifications
+  controller: App\Controller\ApiController::getUserStatus
+  methods: [POST]
+
+api_get_notifs_last:
+  path: /api/user/notifications/last
+  controller: App\Controller\ApiController::getUserLastStatus
+  methods: [POST]
+
+api_mark_user_status:
+  path: /api/user/mark/status
+  controller: App\Controller\ApiController::markUserStatus
+  methods: [POST]
+
+api_change_entity_can_order:
+  path: /api/change/entity/can_order
+  controller: App\Controller\ApiController::changeEntityCanOrder
+  methods: [POST]
+
+api_manage_announce:
+  path: /api/manage/entity/announce
+  controller: App\Controller\ApiController::manageAnnounce
+  methods: [POST]
+
+api_get_qr_code:
+  path: /get/qr/code
+  controller: App\Controller\ApiController::getQrCode
+  methods: [POST,GET]
+
+api_register_top_manager_entity:
+  path: /api/register/top-manager
+  controller: App\Controller\ApiController::registerTopManager
+  methods: [POST]
+
+api_get_top_manager_entity:
+  path: /api/list/top-manager/entity
+  controller: App\Controller\ApiController::getTopManagerEntity
+  methods: [POST]
+
+api_remove_entity_top_manager:
+  path: /api/remove/entity/top-manager
+  controller: App\Controller\ApiController::removeTopManager
+  methods: [POST]
+
+api_add_entity_top_manager:
+  path: /api/add/entity/top-manager
+  controller: App\Controller\ApiController::addTopManager
+  methods: [POST]
+
+api_add_advert:
+  path: /api/add/advert
+  controller: App\Controller\ApiController::addAdvert
+  methods: [POST]
+
+api_edit_advert:
+  path: /api/edit/advert
+  controller: App\Controller\ApiController::editAdvert
+  methods: [POST]
+
+api_delete_advert:
+  path: /api/delete/advert
+  controller: App\Controller\ApiController::deleteAdvert
+  methods: [POST]
+
+api_list_entity_advert:
+  path: /list/entity/advert
+  controller: App\Controller\ApiController::getEntityAdvert
+  methods: [POST]
+
+api_add_product:
+  path: /api/add/product
+  controller: App\Controller\ApiController::addProduct
+  methods: [POST]
+
+api_edit_product:
+  path: /api/edit/product
+  controller: App\Controller\ApiController::editProduct
+  methods: [POST]
+
+api_delete_product:
+  path: /api/delete/product
+  controller: App\Controller\ApiController::deleteProduct
+  methods: [POST]
+
+api_list_entity_product:
+  path: /api/list/entity/product
+  controller: App\Controller\ApiController::getEntityProduct
+  methods: [POST]
+
+api_search_entity:
+  path: /search/entity
+  controller: App\Controller\ApiController::searchEntity
+  methods: [POST]
+
+api_search_product:
+  path: /search/product
+  controller: App\Controller\ApiController::searchProduct
+  methods: [POST]
+
+api_get_all_managers:
+  path: /api/all/managers
+  controller: App\Controller\ApiController::getAllManager
+  methods: [POST]
+
+api_get_all_top_managers:
+  path: /api/all/top_managers
+  controller: App\Controller\ApiController::getAllTopManager
+  methods: [POST]
+
+api_change_user_status:
+  path: /api/change/user/status
+  controller: App\Controller\ApiController::changeUserStatus
+  methods: [POST]
+
+api_add_accepted_pay_mode:
+  path: /api/add/accepted_pay_mode
+  controller: App\Controller\ApiController::addAcceptedPayMode
+  methods: [POST]
+
+api_edit_accepted_pay_mode:
+  path: /api/edit/accepted_pay_mode
+  controller: App\Controller\ApiController::editAcceptedPayMode
+  methods: [POST]
+
+api_remove_accepted_pay_mode:
+  path: /api/remove/accepted_pay_mode
+  controller: App\Controller\ApiController::deleteAcceptedPayMode
+  methods: [POST]
+
+api_list_pay_mode:
+  path: /list/pay_mode
+  controller: App\Controller\ApiController::getAllPayMode
+  methods: [POST]
+
+api_get_qr_code_advert:
+  path: /get/advert/qr/code
+  controller: App\Controller\ApiController::getQrCodeAdvert
+  methods: [POST,GET]
+
+api_search_advert:
+  path: /search/advert
+  controller: App\Controller\ApiController::searchAdvert
+  methods: [POST]
+
+api_list_pharmacy_night:
+  path: /list/pharmacy_night
+  controller: App\Controller\ApiController::listNightPharmacy
+  methods: [POST]
+
+api_add_pharmacy_night:
+  path: /api/add/pharmacy_night
+  controller: App\Controller\ApiController::addNightPharmacy
+  methods: [POST]
+
+api_update_pharmacy_night:
+  path: /api/update/pharmacy_night
+  controller: App\Controller\ApiController::updateNightPharmacy
+  methods: [POST]
+
+api_delete_pharmacy_night:
+  path: /api/delete/pharmacy_night
+  controller: App\Controller\ApiController::deleteNightPharmacy
+  methods: [POST]
+
+api_get_qr_code-pharmacy:
+  path: /get/qr/code/all-night/drugstore
+  controller: App\Controller\ApiController::getQrCodePharmacy
+  methods: [POST,GET]
+
+api_show_advert:
+  path: /show/advert
+  controller: App\Controller\ApiController::showAdvert
+  methods: [POST]
+
+api_get_qr_code_cocan:
+  path: /get/qr/code/cocan
+  controller: App\Controller\ApiController::getQrCodeCocan
+  methods: [POST,GET]
+
+api_update_location:
+  path: /api/update/location
+  controller: App\Controller\ApiController::updateLocation
+  methods: [POST]

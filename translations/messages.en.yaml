@@ -1,0 +1,51 @@
+please login: please login before
+account_created: Your account has been created, an activation link has been emailed to you
+profile_update: Profile updated
+required_field: required field
+user not found: user not found
+user_not_found: user not found
+account not activated: account not activated
+account locked: account locked
+login or password incorrect: login or password incorrect
+Password does not match: login or password incorrect
+empty request: empty request
+phone already used: phone already used
+name should not be empty: name should not be empty
+password should contains at least 6 characters: password should contains at least 6 characters
+empty img: empty img
+please choose image profile again: please choose image profile again
+nothing_to_update: Nothing updated
+not found: entity not found
+account created: account created
+email already used: email already used
+user updated: user update
+action updated: action(s) updated
+code generated: code generated
+already used: already used
+empty field: empty field
+phone length error: phone should content at least 9 digits
+current_password_invalid: Current password is not correct
+new_password_invalid: Password must content at least 6 characters
+password_invalid: Password must content at least 6 characters
+operation denied: operation denied
+sub domain name already used: sub domain name already used
+entity name must content at least 2 characters: entity name must content at least 2 characters
+entity description must content at least 100 characters: entity description must content at least 100 characters
+entity subdomain name must content at least 3 characters: entity subdomain name must content at least 3 characters
+account not found: account not found
+account already activated: account already activated
+account activated: account activated
+endate_startdate_error: the ending date must be greater than the starting date
+extend enddate: you can extend ending date
+activate entity: you must rather perform an activation
+old_startdate_error: the ending date must be greater than the old ending date
+choose at list one category: choose at list one category
+customer name should not be empty: customer name should contain at least 3 chararacters
+customer phone length error: customer phone should content at least 9 digits
+bad user type: bad user type
+new password send: A new password has been sended to your mail box
+no registered entity: no registered entity
+you have not been added to any entity: you have not been added to any entity,
+user already have an entity: user already have an entity
+no pay mode cash registered: no pay mode cash registered
+title should not be empty: title should not be empty

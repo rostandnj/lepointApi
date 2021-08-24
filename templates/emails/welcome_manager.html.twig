@@ -1,0 +1,28 @@
+
+
+<h3>Bienvenue sur Lepoint.cm</h3>
+
+Hello, {{name}} <br/>Votre compte a été enregistré avec succès.
+
+<p>
+    Il ne reste plus qu'a vous connecter avec ce mot de passe <strong>{{ password }}</strong> en cliquant.<br/>
+    sur ce lien <a href="{{ url }}" >connexion</a> ou en le copiant<br/>
+    {{ url }}  dans votre navigateur.<br/>
+    <br/>
+</p>
+<img style="width: 140px;height: 55px" src="{{ logo }}">
+<p>
+    Cordialement,<br/>
+    L'équipe d'assistance
+</p>
+<h4 >
+
+    © {{ date('now')|date("Y") }} Lepoint.cm Inc Tous droits réservés<br />
+</h4>
+
+
+
+
+{# Makes an absolute URL to the /images/logo.png file #}
+
+

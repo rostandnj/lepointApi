@@ -1,0 +1,147 @@
+server {
+	gzip on;
+	gzip_types text/plain application/xml text/html;
+	server_name lepoint.cm www.lepoint.cm;
+
+	root /var/www/html/lepointcm;
+
+	# Add index.php to the list if you are using PHP
+	index index.html index.htm index.nginx-debian.html;
+        try_files $uri $uri/ /index.html;
+	server_name _;
+
+	location / {
+		
+		# First attempt to serve request as file, then
+		# as directory, then fall back to displaying a 404.
+		try_files $uri $uri/ =404;
+	}
+
+
+       listen 443 ssl; # managed by Certbot
+       ssl_certificate /etc/letsencrypt/live/www.lepoint.cm/fullchain.pem; # managed by Certbot
+       ssl_certificate_key /etc/letsencrypt/live/www.lepoint.cm/privkey.pem; # managed by Certbot
+       include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+       ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    server_name api.lepoint.cm www.api.lepoint.cm;
+
+    root /var/www/html/lepointApi/public;
+    index index.php index.html index.htm;
+
+    location / {
+       # try_files $uri $uri/ =404;
+        try_files $uri /index.php$is_args$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_split_path_info ^(.+\.php)(/.*)$;
+        include fastcgi_params;
+        if ($request_method = 'OPTIONS') {
+            add_header 'Access-Control-Allow-Origin' "$http_origin" always;
+            add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PATCH, PUT' always;
+            add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization,lang,Lang' always;
+            add_header 'Access-Control-Max-Age' 1728000;
+            add_header 'Content-Type' 'text/plain; charset=utf-8';
+            add_header 'Content-Length' 0;
+            return 204;
+        }
+        if ($request_method ~* "(GET|POST|PUT|PATCH|DELETE)") {
+            add_header 'Access-Control-Allow-Origin' "$http_origin" always;
+            add_header 'Access-Control-Allow-Methods' 'GET, POST, DELETE, OPTIONS, PATCH, PUT' always;
+            add_header "Access-Control-Allow-Headers" "Authorization, Origin, lang, X-Requested-With, Content-Type, Accept, Lang" always;
+        }
+    }
+
+    location ~ /\.ht {
+           deny all;
+    }
+
+
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/api.lepoint.cm/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/api.lepoint.cm/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+
+
+}
+
+server {
+
+  server_name myadmin.lepoint.cm www.myadmin.lepoint.cm;
+  root /usr/share/phpmyadmin/;
+  index index.php index.html index.htm index.nginx-debian.html;
+
+  access_log /var/log/nginx/phpmyadmin_access.log;
+  error_log /var/log/nginx/phpmyadmin_error.log;
+
+  location / {
+    try_files $uri $uri/ /index.php;
+  }
+
+  location ~ ^/(doc|sql|setup)/ {
+    deny all;
+  }
+
+  location ~ \.php$ {
+    fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    include fastcgi_params;
+    include snippets/fastcgi-php.conf;
+  }
+
+  location ~ /\.ht {
+    deny all;
+  }
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/myadmin.lepoint.cm/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/myadmin.lepoint.cm/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+	listen 80;
+	server_name www.lepoint.cm lepoint.cm;
+	return 301 https://www.lepoint.cm$request_uri;
+
+}
+
+server {
+	listen 80;
+	server_name www.api.lepoint.cm api.lepoint.cm;
+	return 301 https://www.api.lepoint.cm$request_uri;
+
+}
+
+server {
+	listen 80;
+	server_name www.myadmin.lepoint.cm myadmin.lepoint.cm;
+	return 301 https://www.myadmin.lepoint.cm$request_uri;
+
+}
+
+
+#server {
+#    if ($host = myadmin.lepoint.cm) {
+#        return 301 https://$host$request_uri;
+#    } # managed by Certbot
+#
+#
+# listen 80;
+#
+#  server_name myadmin.lepoint.cm www.myadmin.lepoint.cm;
+#    return 404; # managed by Certbot
+#
+#
+#}
