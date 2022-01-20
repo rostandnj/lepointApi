@@ -1518,6 +1518,212 @@ class ApiController extends AbstractController
 
     }
 
+    public function createArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->createArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function updateArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->updateArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function deleteArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->deleteArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function showArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->showArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function recentArticles(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->recentArticles($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function otherArticles(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->otherArticles($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function userArticles(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->userArticles($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function getComments(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->getComments($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function commentArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->commentArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function deleteComment(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->deleteComment($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function reactOnComment(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->reactOnComment($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+    public function reactOnArticle(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->reactOnArticle($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
+
+
 
 
 

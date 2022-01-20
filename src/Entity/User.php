@@ -15,7 +15,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 class User implements UserInterface
 {
     /**
-     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all"})
+     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all","comment_all","comment_mini"})
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
@@ -23,19 +23,19 @@ class User implements UserInterface
     private $id;
 
     /**
-     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all"})
+     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all","comment_all","comment_mini"})
      * @ORM\Column(type="string", length=255)
      */
     private $name;
 
     /**
-     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all"})
+     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all","comment_all","comment_mini"})
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $surname;
 
     /**
-     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all"})
+     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all","comment_all","comment_mini"})
      * @ORM\Column(type="string", length=35)
      */
     private $email;
@@ -97,7 +97,7 @@ class User implements UserInterface
     private $token;
 
     /**
-     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all"})
+     * @Groups({"user_all", "user_mini", "order_all", "order_mini","status_all", "entity_all","comment_all","comment_mini"})
      * @ORM\Column(name="picture", type="string",nullable=false)
      */
     private $picture;
@@ -124,6 +124,21 @@ class User implements UserInterface
      */
     private $managerEntities;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="user")
+     */
+    private $comments;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Article::class, mappedBy="user")
+     */
+    private $articles;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Reaction::class, mappedBy="user")
+     */
+    private $reactions;
+
     CONST USER_ADMIN=0;
     CONST USER_TOP_MANAGER=1;
     CONST USER_OWNER=10;
@@ -141,6 +156,9 @@ class User implements UserInterface
         $this->picture = $this->gender == 1 ? 'man.png':'woman.png';
         $this->topManagerRestaurants = new ArrayCollection();
         $this->managerEntities = new ArrayCollection();
+        $this->comments = new ArrayCollection();
+        $this->articles = new ArrayCollection();
+        $this->reactions = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -449,6 +467,96 @@ class User implements UserInterface
             'pivture'=>$this->picture,
 
         ];
+    }
+
+    /**
+     * @return Collection|Comment[]
+     */
+    public function getComments(): Collection
+    {
+        return $this->comments;
+    }
+
+    public function addComment(Comment $comment): self
+    {
+        if (!$this->comments->contains($comment)) {
+            $this->comments[] = $comment;
+            $comment->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeComment(Comment $comment): self
+    {
+        if ($this->comments->removeElement($comment)) {
+            // set the owning side to null (unless already changed)
+            if ($comment->getUser() === $this) {
+                $comment->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Article[]
+     */
+    public function getArticles(): Collection
+    {
+        return $this->articles;
+    }
+
+    public function addArticle(Article $article): self
+    {
+        if (!$this->articles->contains($article)) {
+            $this->articles[] = $article;
+            $article->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeArticle(Article $article): self
+    {
+        if ($this->articles->removeElement($article)) {
+            // set the owning side to null (unless already changed)
+            if ($article->getUser() === $this) {
+                $article->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Reaction[]
+     */
+    public function getReactions(): Collection
+    {
+        return $this->reactions;
+    }
+
+    public function addReaction(Reaction $reaction): self
+    {
+        if (!$this->reactions->contains($reaction)) {
+            $this->reactions[] = $reaction;
+            $reaction->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeReaction(Reaction $reaction): self
+    {
+        if ($this->reactions->removeElement($reaction)) {
+            // set the owning side to null (unless already changed)
+            if ($reaction->getUser() === $this) {
+                $reaction->setUser(null);
+            }
+        }
+
+        return $this;
     }
 
 }

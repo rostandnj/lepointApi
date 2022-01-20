@@ -425,3 +425,63 @@ api_update_location:
   path: /api/update/location
   controller: App\Controller\ApiController::updateLocation
   methods: [POST]
+
+api_article_create:
+  path: /api/article/create
+  controller: App\Controller\ApiController::createArticle
+  methods: [POST]
+
+api_article_update:
+  path: /api/article/update
+  controller: App\Controller\ApiController::updateArticle
+  methods: [POST]
+
+api_article_delete:
+  path: /api/article/delete
+  controller: App\Controller\ApiController::deleteArticle
+  methods: [POST]
+
+api_article_show:
+  path: /article/show
+  controller: App\Controller\ApiController::showArticle
+  methods: [POST]
+
+api_article_recents:
+  path: /article/recents
+  controller: App\Controller\ApiController::recentArticles
+  methods: [POST]
+
+api_article_other:
+  path: /article/others
+  controller: App\Controller\ApiController::otherArticles
+  methods: [POST]
+
+api_article_user:
+  path: /api/article/user
+  controller: App\Controller\ApiController::userArticles
+  methods: [POST]
+
+api_comment_create:
+  path: /api/comment/create
+  controller: App\Controller\ApiController::commentArticle
+  methods: [POST]
+
+api_comment_delete:
+  path: /api/comment/delete
+  controller: App\Controller\ApiController::deleteComment
+  methods: [POST]
+
+api_comment_list:
+  path: /comment/list
+  controller: App\Controller\ApiController::getComments
+  methods: [POST]
+
+api_comment_react:
+  path: /api/comment/react
+  controller: App\Controller\ApiController::reactOnComment
+  methods: [POST]
+
+api_article_react:
+  path: /api/article/react
+  controller: App\Controller\ApiController::reactOnArticle
+  methods: [POST]

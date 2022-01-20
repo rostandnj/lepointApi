@@ -5,8 +5,10 @@ namespace App\Service;
 
 use App\Entity\AcceptedPayMode;
 use App\Entity\Advert;
+use App\Entity\Article;
 use App\Entity\BaseCategory;
 use App\Entity\City;
+use App\Entity\Comment;
 use App\Entity\Country;
 use App\Entity\Day;
 use App\Entity\File;
@@ -23,6 +25,7 @@ use App\Entity\PayMode;
 use App\Entity\Entity;
 use App\Entity\EntityActivation;
 use App\Entity\Product;
+use App\Entity\Reaction;
 use App\Entity\Status;
 use App\Entity\Upload;
 use App\Entity\User;
@@ -1555,7 +1558,7 @@ class UserService
 
 
         $user = new User();
-        $user->setIsActive(true);
+        $user->setIsActive(false);
         $user->setIsClose(false);
         $pass = $data['password'];
         switch ($data['type']){
@@ -4111,6 +4114,436 @@ class UserService
         return ['error' => false, 'data' =>  $this->container->get(MySerializer::class)->singleObjectToArray($entity,'entity_all'), 'message' =>''];
 
     }
+
+    // blog
+    public function createArticle(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+        if(!in_array($user->getType(),[User::USER_TOP_MANAGER,User::USER_ADMIN])){
+            return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('operation denied')];
+        }
+
+
+        $required = ['title','content','cover_image','type'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        if(strlen($data['title']) < 1) return ['message' => $this->translator->trans('title should not be empty'), 'error' =>true, 'data' => []];
+        if(strlen($data['content']) < 1) return ['message' => $this->translator->trans('content should not be empty'), 'error' =>true, 'data' => []];
+
+
+        $article = new Article();
+        $article->setTitle($data['title']);
+        $article->setContent($data['content']);
+        $article->setType((int)$data['type']);
+        //$article->setTags($data['tags']);
+        if($data['cover_image'] !== ''){
+            $article->setImageCover($data['cover_image']);
+        }
+        $article->setUser($user);
+
+        if($data['cover_image'] !== null){
+            $article->setImageCover($data['cover_image']);
+        }
+
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all')];
+
+    }
+
+    public function updateArticle(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+        if(!in_array($user->getType(),[User::USER_TOP_MANAGER,User::USER_ADMIN])){
+            return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('operation denied')];
+        }
+
+
+        $required = ['id','title','content','cover_image','type'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        if(strlen($data['title']) < 1) return ['message' => $this->translator->trans('title should not be empty'), 'error' =>true, 'data' => []];
+        if(strlen($data['content']) < 1) return ['message' => $this->translator->trans('content should not be empty'), 'error' =>true, 'data' => []];
+
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['id'=>$data['id']]);
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        if($article->getUser() !== $user) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('operation denied')];
+
+
+        $article->setTitle($data['title']);
+        $article->setType((int)$data['type']);
+        $article->setContent($data['content']);
+        //$article->setTags($data['tags']);
+        if($data['cover_image'] !== ''){
+            $article->setImageCover($data['cover_image']);
+        }
+
+        if($data['cover_image'] !== null){
+            $article->setImageCover($data['cover_image']);
+        }
+
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all')];
+
+    }
+
+    public function deleteArticle(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+        if(!in_array($user->getType(),[User::USER_TOP_MANAGER,User::USER_ADMIN])){
+            return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('operation denied')];
+        }
+
+
+        $required = ['id'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['id'=>$data['id']]);
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        if($article->getUser() !== $user) {
+            if($user->getType() !== User::USER_ADMIN){
+                return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('operation denied')];
+            }
+        }
+
+        $article->setIsActive(false);
+
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all')];
+
+    }
+
+    public function showArticle(array $data):?array{
+
+       // $user =$this->getCurrentUser();
+
+        $required = ['slug'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['slug'=>$data['slug']]);
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        $comments = $this->em->getRepository(Comment::class)->findBy(['article'=>$article,'isActive'=>true],['id'=>'ASC'],$limit,$offset);
+
+
+        $article->incNbView();
+
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => ['article'=>$this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all'),'comments'=>$this->container->get(MySerializer::class)->multipleObjectToArray($comments,'comment_all')]];
+
+    }
+
+    public function recentArticles(array $data):?array{
+
+       // $user =$this->getCurrentUser();
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        $articles = $this->em->getRepository(Article::class)->findBy(['isActive'=>true],['id'=>'DESC'],$limit,$offset);
+
+        return ['error' => false, 'data' =>$this->container->get(MySerializer::class)->multipleObjectToArray($articles,'article_all')];
+
+    }
+
+    public function userArticles(array $data):?array{
+
+        $user =$this->getCurrentUser();
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        if($user->getType() === User::USER_ADMIN){
+            $articles = $this->em->getRepository(Article::class)->findBy(['isActive'=>true],['id'=>'DESC'],$limit,$offset);
+
+        }
+        else{
+            $articles = $this->em->getRepository(Article::class)->findBy(['user'=>$user,'isActive'=>true],['id'=>'DESC'],$limit,$offset);
+
+        }
+
+
+        return ['error' => false, 'data' =>$this->container->get(MySerializer::class)->multipleObjectToArray($articles,'article_all')];
+
+    }
+
+    public function otherArticles(array $data):?array{
+
+        $required = ['id'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        $articles = $this->em->getRepository(Article::class)->findOtherThan($data['id'],$limit,$offset);
+
+        return ['error' => false, 'data' =>$this->container->get(MySerializer::class)->multipleObjectToArray($articles,'article_all')];
+
+    }
+
+    public function commentArticle(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+        if($user === null){
+            return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('operation denied')];
+        }
+
+
+        $required = ['message','id'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        if(strlen($data['message']) < 1) return ['message' => $this->translator->trans('comment should not be empty'), 'error' =>true, 'data' => []];
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['id'=>$data['id']]);
+
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        $comment =  new Comment();
+        $comment->setUser($user);
+        $comment->setMessage($data['message']);
+        $comment->setArticle($article);
+        $article->incNbComment();
+        $article->addComment($comment);
+
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' =>['article'=>$this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all'),'comment'=>$this->container->get(MySerializer::class)->singleObjectToArray($comment,'comment_all')]];
+
+    }
+
+    public function getComments(array $data):?array{
+
+        // $user =$this->getCurrentUser();
+
+        $required = ['id'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['id'=>$data['id']]);
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        $comments = $this->em->getRepository(Comment::class)->findBy(['article'=>$article,'isActive'=>true],['id'=>'ASC'],$limit,$offset);
+
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->multipleObjectToArray($comments,'comment_all')];
+
+    }
+
+    public function deleteComment(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+        if(!in_array($user->getType(),[User::USER_TOP_MANAGER,User::USER_ADMIN])){
+            return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('operation denied')];
+        }
+
+
+        $required = ['id'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $comment = $this->em->getRepository(Comment::class)->findOneBy(['id'=>$data['id']]);
+        if($comment === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        if($comment->getUser() !== $user) {
+            if($user->getType() !== User::USER_ADMIN){
+                return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('operation denied')];
+            }
+        }
+
+        $comment->setIsActive(false);
+
+        $this->em->persist($comment);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($comment,'comment_all')];
+
+    }
+
+
+    public function reactOnComment(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+
+        $required = ['id','action'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $comment = $this->em->getRepository(Comment::class)->findOneBy(['id'=>$data['id']]);
+        if($comment === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        $reaction = $this->em->getRepository(Reaction::class)->findOneBy(['comment'=>$comment,'user'=>$user]);
+        if($reaction === null){
+            $reaction = new Reaction();
+            $reaction->setUser($user);
+            $reaction->setComment($comment);
+            $reaction->setType(Reaction::REACTION_COMMENT);
+            $reaction->setAction(1);
+            $comment->incNbLike();
+        }
+        else{
+            if($reaction->getAction() == 1){
+
+                    $comment->decNblike();
+                    $reaction->setAction(0);
+            }
+            else{
+                  $reaction->setAction(1);
+                  $comment->incNbLike();
+            }
+        }
+
+        $comment->addReaction($reaction);
+        $this->em->persist($comment);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($comment,'comment_all')];
+
+    }
+
+    public function reactOnArticle(array $data):?array{
+
+        $user =$this->getCurrentUser();
+
+
+        $required = ['id','action'];
+        foreach ($required as $el)
+        {
+            if(!array_key_exists($el,$data))
+            {
+                return ['error' => true, 'data' => [], 'message' =>$this->translator->trans('required_field'). ' : ' .$el];
+            }
+
+        }
+
+        $article = $this->em->getRepository(Article::class)->findOneBy(['id'=>$data['id']]);
+        if($article === null) return ['error'=>true,'data'=>[],'message'=>$this->translator->trans('not found')];
+
+        $reaction = $this->em->getRepository(Reaction::class)->findOneBy(['article'=>$article,'user'=>$user]);
+        if($reaction === null){
+            $reaction = new Reaction();
+            $reaction->setUser($user);
+            $reaction->setArticle($article);
+            $reaction->setType(Reaction::REACTION_ARTICLE);
+            if((int)$data['action'] >=1 && (int)$data['action'] <=5){
+                $reaction->setAction((int)$data['action']);
+            }
+            else{
+                $reaction->setAction(5);
+            }
+
+        }
+        else{
+            if((int)$data['action'] >=1 && (int)$data['action'] <=5){
+                $reaction->setAction((int)$data['action']);
+            }
+            else{
+                $reaction->setAction(5);
+            }
+        }
+
+        $this->em->persist($reaction);
+        $this->em->flush();
+        $val = $this->em->getRepository(Reaction::class)->AvgOfReaction($article->getId());
+
+        $article->setRate($val[0]['total']);
+        $this->em->persist($article);
+        $this->em->flush();
+
+        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all')];
+
+    }
+
+
 
 
 

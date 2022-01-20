@@ -48,4 +48,6 @@ no registered entity: Aucune entité enregistré
 you have not been added to any entity: vous n'avez été ajouté à aucune entité
 user already have an entity: l'utilisateur a déjà une entité
 no pay mode cash registered: aucun mode de paiement cash enregistré
-title should not be empty: title should not be empty
+title should not be empty: titre vide
+content should not be empty: contenu vide
+comment should not be empty: commentaire vide

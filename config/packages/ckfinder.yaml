@@ -1,0 +1,9 @@
+ckfinder:
+  connector:
+    csrfProtection: false
+    backends:
+      default:
+        baseUrl: '%env(BASE_URL_EDITOR_FILE)%'
+
+
+    authenticationClass: App\CustomCKFinderAuth\CustomCKFinderAuth

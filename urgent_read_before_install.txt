@@ -1,0 +1,1 @@
+for using CKeditor, Change the Request constance MAIN_REQUEST
