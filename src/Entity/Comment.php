@@ -214,7 +214,7 @@ class Comment
 
     public function decNbLike(): self
     {
-        if($this->nbLike>1){
+        if($this->nbLike >= 1){
             $this->nbLike --;
         }
 

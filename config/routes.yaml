@@ -451,6 +451,11 @@ api_article_recents:
   controller: App\Controller\ApiController::recentArticles
   methods: [POST]
 
+api_article_cocan:
+  path: /article/cocan
+  controller: App\Controller\ApiController::cocanArticles
+  methods: [POST]
+
 api_article_other:
   path: /article/others
   controller: App\Controller\ApiController::otherArticles

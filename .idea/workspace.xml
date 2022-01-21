@@ -2,778 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c6f8d1a-ff37-487a-8687-a2486399a2de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/ckfinder.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/ckfinder.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fichier_services.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/CHANGELOG.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/LICENSE.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/README.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/ckfinder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/ckfinder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/az.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/bg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/bs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ca.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/cs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/cy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/da.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/de-ch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/de.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/el.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/eo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/es-mx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/es.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/et.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/eu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/fa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/fi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/fr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/gu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/he.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/hi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/hr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/hu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/id.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/it.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ja.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ko.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ku.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/lt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/lv.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/nb.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/nl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/nn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/no.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/pl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/pt-br.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ro.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/ru.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/sk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/sl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/sr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/sv.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/tr.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/uk.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/uz-cyrl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/uz-latn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/vi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/zh-cn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/lang/zh-tw.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/caman.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/action-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/action-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/alert-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/alert-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-l-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-l-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-r-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-r-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-d-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-l-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-l-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-r-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-r-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-l-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-l-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-r-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-r-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/arrow-u-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/audio-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/audio-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/back-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/back-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/bars-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/bars-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/bullets-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/bullets-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/calendar-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/calendar-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/camera-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/camera-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-d-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-d-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-l-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-l-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-r-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-r-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-u-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/carat-u-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/check-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/check-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/clock-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/clock-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/cloud-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/cloud-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/comment-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/comment-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/delete-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/delete-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/edit-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/edit-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/eye-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/eye-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/forbidden-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/forbidden-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/forward-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/forward-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/gear-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/gear-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/grid-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/grid-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/heart-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/heart-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/home-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/home-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/info-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/info-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/location-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/location-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/lock-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/lock-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/mail-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/mail-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/minus-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/minus-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/navigation-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/navigation-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/phone-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/phone-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/plus-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/plus-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/power-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/power-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/recycle-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/recycle-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/refresh-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/refresh-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/search-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/search-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/shop-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/shop-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/star-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/star-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/tag-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/tag-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/user-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/user-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/video-black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/images/icons-png/video-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/jquery.mobile.icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/jquery.mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/jquery.mobile.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/libs/jquery.mobile.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/plugins/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/ckeditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/adjoined-separator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/alert.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-download.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-navigation-a-github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-question-mark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-sdk-book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-sdk-documentation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-sdk-gear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-sdk-sample.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-toggler-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-toggler.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-tree-a-collapser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/icon-tree-a-link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/img/tip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/css/sample.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/full-page-open.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/full-page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/js/html5shiv.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/js/sf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/js/tree-a.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/localization.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/modals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/other-custom-configuration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/other-read-only.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/plugin-examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/plugins/StatusBarInfo/StatusBarInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/popups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/skins-jquery-mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/skins-moono.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/skins-neko.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/user-interface-compact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/user-interface-default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/user-interface-listview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/user-interface-mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/samples/widget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/ckfinder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/128/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/16/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/22/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/256/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/32/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/48/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/file-icons/64/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/images/custom/128/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/images/custom/256/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/images/custom/32/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/images/custom/48/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/core/images/custom/64/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/jquery-mobile/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/moono/ckfinder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/moono/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/moono/images/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/ckfinder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/unknow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/128/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/16/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/22/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/unknow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/256/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/32/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/48/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/7z.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/access.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/audio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/calc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/directory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/image-preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/impress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/javascript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/msword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/plain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/powerpoint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/rar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/readme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/rtf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/sql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/tar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/unknow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/unknown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/writer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/file-icons/64/zip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/adjust-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/arrow-d-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/arrow-l-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/arrow-r-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/back-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/blur-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/brightness-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/cancel-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/choose-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/choose-resized-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/clip-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/contrast-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/crop-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/details-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/exposure-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-copy-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-delete-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-download-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-edit-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-move-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/file-rename-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/folder-add-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/folder-delete-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/folder-rename-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/forward-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/gamma-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/hue-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/maximize-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/menu-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/minimize-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/minus-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/more-vertical-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/noise-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/plus-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/presets-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/question-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/reset-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/resize-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/rotate-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/rotate-left-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/rotate-right-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/saturation-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/save-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/sepia-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/settings-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/sharpen-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/tick-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/upload-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/vibrance-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/black/view-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/add-circle-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/add-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/add-photo-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/adjust-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/arrow-down-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/check-blue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/check-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/check-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/checkbox-checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/checkbox.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/close-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/crop-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/folder-add-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/folder-blue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/folder-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/folder-open-blue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/info-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/photo-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/presets-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/reset-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/resize-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/rotate-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/rotate-left-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/rotate-right-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/save-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/settings.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/gray/trash-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/white/arrow-left-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/images/svg/white/arrow-right-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/cksourceckfinder/ckfinder/skins/neko/skin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/news.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/61e8a85308b381.42878513.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/61e8c18d9fccc2.49448007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/61e8c1e3b56fc6.03270521.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/61e8d2174d0aa8.18460790.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/mini/61e8a85308b381.42878513.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/mini/61e8c18d9fccc2.49448007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/mini/61e8c1e3b56fc6.03270521.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/mini/61e8d2174d0aa8.18460790.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/profile/61e8a85308b381.42878513.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/profile/61e8c18d9fccc2.49448007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/profile/61e8c1e3b56fc6.03270521.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/profile/61e8d2174d0aa8.18460790.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/files/aa-logo-60ffeeb87ea42.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(1).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(10).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(11).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(12).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(2).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(3).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(4).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(5).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(6).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(7).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(8).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(9).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(1).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(2).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(3).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(4).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(5).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(6).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(7).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(8).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(9).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(2).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(3).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(4).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(5).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(6).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news(7).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(1).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(2).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(3).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(4).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(5).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(6).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading(7).gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/userfiles/images/news_reading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomCKFinderAuth/CustomCKFinderAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Reaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ReactionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/SocialMedia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urgent_read_before_install.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lepoint_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lepoint_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/files/aa-logo-60ffeeb87ea42.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(10).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(11).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(12).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(2).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(3).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(4).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(5).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(6).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(7).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(8).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1)(9).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42 (1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(2).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(3).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(4).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(5).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(6).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(7).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(8).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42(9).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/aa-logo-60ffeeb87ea42.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(5).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(6).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news(7).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(1).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(2).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(3).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(4).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(5).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(6).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading(7).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/userfiles/images/news_reading.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/messages.en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages.en.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/messages.fr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages.fr.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -958,7 +233,7 @@
       <workItem from="1642069780192" duration="7912000" />
       <workItem from="1642282006584" duration="2066000" />
       <workItem from="1642504366079" duration="1476000" />
-      <workItem from="1642532934910" duration="19677000" />
+      <workItem from="1642532934910" duration="24305000" />
     </task>
     <servers />
   </component>
@@ -2029,7 +1304,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Controller/ApiController.php</url>
-          <line>1605</line>
+          <line>1622</line>
           <properties>
             <option name="className" value="\App\Controller\ApiController" />
             <option name="methodName" value="otherArticles" />
@@ -2038,7 +1313,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Controller/ApiController.php</url>
-          <line>1622</line>
+          <line>1639</line>
           <properties>
             <option name="className" value="\App\Controller\ApiController" />
             <option name="methodName" value="userArticles" />
@@ -2083,7 +1358,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4281</line>
+          <line>4286</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="recentArticles" />
@@ -2092,7 +1367,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4295</line>
+          <line>4314</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="userArticles" />
@@ -2101,7 +1376,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4317</line>
+          <line>4336</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="otherArticles" />
@@ -2110,7 +1385,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Controller/ApiController.php</url>
-          <line>1639</line>
+          <line>1656</line>
           <properties>
             <option name="className" value="\App\Controller\ApiController" />
             <option name="methodName" value="getComments" />
@@ -2119,7 +1394,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4339</line>
+          <line>4358</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="commentArticle" />
@@ -2128,7 +1403,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4378</line>
+          <line>4401</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="getComments" />
@@ -2137,7 +1412,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4407</line>
+          <line>4430</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="deleteComment" />
@@ -2146,7 +1421,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Controller/ApiController.php</url>
-          <line>1656</line>
+          <line>1673</line>
           <properties>
             <option name="className" value="\App\Controller\ApiController" />
             <option name="methodName" value="commentArticle" />
@@ -2155,7 +1430,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Controller/ApiController.php</url>
-          <line>1673</line>
+          <line>1690</line>
           <properties>
             <option name="className" value="\App\Controller\ApiController" />
             <option name="methodName" value="deleteComment" />
@@ -2164,21 +1439,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4445</line>
+          <line>4468</line>
           <properties>
             <option name="className" value="\App\Service\UserService" />
             <option name="methodName" value="reactOnComment" />
           </properties>
           <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/src/Service/UserService.php</url>
-          <line>4492</line>
-          <properties>
-            <option name="className" value="\App\Service\UserService" />
-            <option name="methodName" value="reactOnArticle" />
-          </properties>
-          <option name="timeStamp" value="144" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

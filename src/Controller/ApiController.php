@@ -1603,6 +1603,23 @@ class ApiController extends AbstractController
 
     }
 
+    public function cocanArticles(Request $request)
+    {
+        $reqService = new RequestService($this->request);
+        $data = $reqService->getPostData();
+
+        $userService = $this->mycontainer->get(UserService::class);
+
+        try {
+            $res = $userService->cocanArticles($data);
+            return $this->renderResponse($res);
+        }catch (\Exception $e){
+
+            return $this->renderException($e);
+        }
+
+    }
+
     public function otherArticles(Request $request)
     {
         $reqService = new RequestService($this->request);

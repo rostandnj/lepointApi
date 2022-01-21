@@ -4275,7 +4275,12 @@ class UserService
         $this->em->persist($article);
         $this->em->flush();
 
-        return ['error' => false, 'data' => ['article'=>$this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all'),'comments'=>$this->container->get(MySerializer::class)->multipleObjectToArray($comments,'comment_all')]];
+        $tab = $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all');
+        $tab['links']= (new SocialMedia)->GetSocialMediaSiteLinks_WithShareLinks(['url'=>$this->container->getParameter('base_url_share').$article->getSlug(),'title'=>$article->getTitle()]);
+
+
+
+        return ['error' => false, 'data' => ['article'=>$tab,'comments'=>$this->container->get(MySerializer::class)->multipleObjectToArray($comments,'comment_all')]];
 
     }
 
@@ -4288,6 +4293,20 @@ class UserService
         if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
 
         $articles = $this->em->getRepository(Article::class)->findBy(['isActive'=>true],['id'=>'DESC'],$limit,$offset);
+
+        return ['error' => false, 'data' =>$this->container->get(MySerializer::class)->multipleObjectToArray($articles,'article_all')];
+
+    }
+
+    public function cocanArticles(array $data):?array{
+
+       // $user =$this->getCurrentUser();
+        $offset = 0;
+        $limit = 10;
+        if(array_key_exists('offset',$data)){ $offset = $data['offset'];}
+        if(array_key_exists('limit',$data)){ $limit = $data['limit'];}
+
+        $articles = $this->em->getRepository(Article::class)->findBy(['isActive'=>true,'type'=>Article::TYPE_COCAN],['id'=>'DESC'],$limit,$offset);
 
         return ['error' => false, 'data' =>$this->container->get(MySerializer::class)->multipleObjectToArray($articles,'article_all')];
 
@@ -4372,7 +4391,11 @@ class UserService
         $this->em->persist($article);
         $this->em->flush();
 
-        return ['error' => false, 'data' =>['article'=>$this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all'),'comment'=>$this->container->get(MySerializer::class)->singleObjectToArray($comment,'comment_all')]];
+        $tab = $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all');
+        $tab['links']= (new SocialMedia)->GetSocialMediaSiteLinks_WithShareLinks(['url'=>$this->container->getParameter('base_url_share').$article->getSlug(),'title'=>$article->getTitle()]);
+
+
+        return ['error' => false, 'data' =>['article'=>$tab,'comment'=>$this->container->get(MySerializer::class)->singleObjectToArray($comment,'comment_all')]];
 
     }
 
@@ -4447,7 +4470,6 @@ class UserService
 
         $user =$this->getCurrentUser();
 
-
         $required = ['id','action'];
         foreach ($required as $el)
         {
@@ -4471,15 +4493,15 @@ class UserService
             $comment->incNbLike();
         }
         else{
-            if($reaction->getAction() == 1){
-
-                    $comment->decNblike();
-                    $reaction->setAction(0);
+            if($reaction->getAction() === 0){
+                $reaction->setAction(1);
+                $comment->incNbLike();
             }
             else{
-                  $reaction->setAction(1);
-                  $comment->incNbLike();
+                $comment->decNblike();
+                $reaction->setAction(0);
             }
+
         }
 
         $comment->addReaction($reaction);
@@ -4539,7 +4561,11 @@ class UserService
         $this->em->persist($article);
         $this->em->flush();
 
-        return ['error' => false, 'data' => $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all')];
+        $tab = $this->container->get(MySerializer::class)->singleObjectToArray($article,'article_all');
+        $tab['links']= (new SocialMedia)->GetSocialMediaSiteLinks_WithShareLinks(['url'=>$this->container->getParameter('base_url_share').$article->getSlug(),'title'=>$article->getTitle()]);
+
+
+        return ['error' => false, 'data' => $tab];
 
     }
 

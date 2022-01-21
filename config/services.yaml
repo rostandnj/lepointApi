@@ -10,6 +10,7 @@ parameters:
     email_reset: '%env(EMAIL_RESET)%'
     email_account_lock: '%env(EMAIL_ACCOUNT_LOCK)%'
     email_validation_ok: '%env(EMAIL_VALIDATION_OK)%'
+    base_url_share: '%env(BASE_URL_SHARE)%'
 
 services:
     # default configuration for services in *this* file
